@@ -1,0 +1,10 @@
+android_app_import {
+    name: "PdfViewer",
+    certificate: "platform",
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    overrides: ["Camelot"],
+    apk: "app-release-unsigned.apk",
+}

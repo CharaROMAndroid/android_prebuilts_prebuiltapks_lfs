@@ -1,0 +1,26 @@
+android_app_import {
+    name: "Talkback",
+    optional_uses_libs: [
+        "com.google.android.wearable",
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    default_dev_cert: true,
+    arch: {
+        arm: {
+            apk: "talkback-foss-phone-armeabi-v7a-release-unsigned.apk",
+        },
+        arm64: {
+            apk: "talkback-foss-phone-arm64-v8a-release-unsigned.apk",
+        },
+        x86: {
+            apk: "talkback-foss-phone-x86-release-unsigned.apk",
+        },
+        x86_64: {
+            apk: "talkback-foss-phone-x86_64-release-unsigned.apk",
+        },
+    },
+    dex_preopt: {
+        enabled: false,
+    },
+}

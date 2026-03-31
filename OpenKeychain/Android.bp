@@ -1,0 +1,6 @@
+android_app_import {
+    name: "OpenKeychain",
+    apk: "org.sufficientlysecure.keychain_60400.apk",
+    presigned: true,
+    preprocessed: true,
+}

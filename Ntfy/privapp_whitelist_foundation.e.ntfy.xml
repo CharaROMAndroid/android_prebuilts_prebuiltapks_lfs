@@ -1,0 +1,8 @@
+<permissions>
+    <privapp-permissions package="foundation.e.ntfy">
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <permission name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+        <permission name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED" />
+        <permission name="android.permission.STATUS_BAR_SERVICE" />
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,13 @@
+prebuilt_etc {
+    name: "privapp-permissions-com.google.android.projection.gearhead.xml",
+    src: "privapp-permissions-com.google.android.projection.gearhead.xml",
+    relative_install_path: "permissions",
+}
+
+android_app_import {
+    name: "AndroidAutoStub",
+    privileged: true,
+    certificate: "platform",
+    required: ["privapp-permissions-com.google.android.projection.gearhead.xml"],
+    apk: "app-release-unsigned.apk",
+}

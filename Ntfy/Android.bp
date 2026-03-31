@@ -1,0 +1,19 @@
+android_app_import {
+    name: "Ntfy",
+    certificate: "platform",
+    privileged: true,
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    required: ["privapp_whitelist_foundation.e.ntfy.xml"],
+    system_ext_specific: true,
+    apk: "app-fdroid-release-unsigned.apk",
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_foundation.e.ntfy.xml",
+    system_ext_specific: true,
+    src: "privapp_whitelist_foundation.e.ntfy.xml",
+    relative_install_path: "permissions",
+}
