@@ -22,10 +22,9 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PACKAGES += \
-    AccountManager \
     Ntfy \
-    ParentalControl \
     Talkback \
+    
 
 
 # eSpeak
@@ -37,6 +36,5 @@ endif
 MINIMAL_APPS ?= false
 
 ifeq ($(MINIMAL_APPS),false)
-PRODUCT_PACKAGES += PdfViewer
 PRODUCT_PACKAGES += OpenKeychain
 endif

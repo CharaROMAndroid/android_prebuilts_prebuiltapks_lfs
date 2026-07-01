@@ -1,0 +1,14 @@
+android_app_import {
+    name: "FDroidPrivilegedExtension",
+    required: ["org.fdroid.fdroid.privileged.xml"],
+    system_ext_specific: true,
+    apk: "org.fdroid.fdroid.privileged_2130.apk",
+    presigned: true,
+    preprocessed: true,
+}
+prebuilt_etc {
+    name: "org.fdroid.fdroid.privileged.xml",
+    system_ext_specific: true,
+    src: "org.fdroid.fdroid.privileged.xml",
+    relative_install_path: "permissions",
+}
