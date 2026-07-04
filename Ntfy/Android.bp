@@ -1,20 +1,21 @@
 android_app_import {
     name: "Ntfy",
-    privileged: true,
+    privileged: false,
     presigned: true,
     preprocessed: true,
     optional_uses_libs: [
         "androidx.window.extensions",
         "androidx.window.sidecar",
     ],
-    required: ["privapp_whitelist_io.heckel.ntfy.xml"],
+    
+    required: ["app_whitelist_io.heckel.ntfy.xml"], 
     system_ext_specific: true,
     apk: "app-fdroid-release-signed.apk",
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_io.heckel.ntfy.xml",
+    name: "app_whitelist_io.heckel.ntfy.xml",
     system_ext_specific: true,
-    src: "privapp_whitelist_io.heckel.ntfy.xml",
+    src: "app_whitelist_io.heckel.ntfy.xml",
     relative_install_path: "permissions",
 }
