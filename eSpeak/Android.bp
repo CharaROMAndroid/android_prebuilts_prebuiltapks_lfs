@@ -1,9 +1,0 @@
-android_app_import {
-    name: "eSpeak",
-    certificate: "platform",
-    overrides: [
-        "PicoTTS",
-        "PicoTts",
-    ],
-    apk: "espeak-release-unsigned.apk",
-}

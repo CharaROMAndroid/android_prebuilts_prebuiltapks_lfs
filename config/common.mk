@@ -24,13 +24,7 @@ endif
 PRODUCT_PACKAGES += \
     Ntfy \
     Talkback \
-    
-
-
-# eSpeak
-ifeq ($(TARGET_SUPPORTS_32_BIT_APPS),false)
-PRODUCT_PACKAGES += eSpeak
-endif
+    FDroidPrivilegedExtension \
 
 # Optional applications
 MINIMAL_APPS ?= false
