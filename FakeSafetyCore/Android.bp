@@ -1,0 +1,6 @@
+android_app_import {
+    name: "FakeSafetyCore",
+    apk: "com.google.android.safetycore.apk",
+    presigned: true,
+    preprocessed: true,
+}

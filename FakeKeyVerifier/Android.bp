@@ -1,0 +1,6 @@
+android_app_import {
+    name: "FakeKeyVerifier",
+    apk: "com.google.android.contactkeys.apk",
+    presigned: true,
+    preprocessed: true,
+}

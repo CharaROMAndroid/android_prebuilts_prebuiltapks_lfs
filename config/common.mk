@@ -25,6 +25,8 @@ PRODUCT_PACKAGES += \
     Ntfy \
     Talkback \
     FDroidPrivilegedExtension \
+    FakeSafetyCore \
+    FakeKeyVerifier \
 
 # Optional applications
 MINIMAL_APPS ?= false
