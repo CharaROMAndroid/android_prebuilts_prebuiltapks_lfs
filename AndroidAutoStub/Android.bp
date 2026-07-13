@@ -5,5 +5,5 @@ android_app_import {
     preprocessed: true,
     required: ["com.google.android.projection.gearhead.xml"],
     apk: "AndroidAutoStubPrebuilt.apk",
-    uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
+    uses-library-not-required: ["androidx.window.extensions", "androidx.window.sidecar"],
 }
