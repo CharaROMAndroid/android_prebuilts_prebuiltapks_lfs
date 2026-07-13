@@ -1,9 +1,3 @@
-prebuilt_etc {
-    name: "com.google.android.projection.gearhead.xml",
-    src: "com.google.android.projection.gearhead.xml",
-    relative_install_path: "permissions",
-}
-
 android_app_import {
     name: "AndroidAutoStub",
     privileged: true,
@@ -11,4 +5,9 @@ android_app_import {
     preprocessed: true,
     required: ["com.google.android.projection.gearhead.xml"],
     apk: "AndroidAutoStubPrebuilt.apk",
+    // Add the missing dependencies identified by the build system
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
 }
