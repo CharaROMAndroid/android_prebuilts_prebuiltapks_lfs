@@ -24,7 +24,8 @@ endif
 PRODUCT_PACKAGES += \
     Ntfy \
     Talkback \
-    FDroidPrivilegedExtension \
+    Datura \
+    ESpeakNG \
     FakeSafetyCore \
     FakeKeyVerifier \
 
