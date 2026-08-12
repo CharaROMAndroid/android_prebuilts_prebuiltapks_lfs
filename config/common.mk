@@ -19,6 +19,7 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_PACKAGES += \
     Talkback \
     Datura \
+    ESpeakNG \
     FakeSafetyCore \
     FakeKeyVerifier 
 

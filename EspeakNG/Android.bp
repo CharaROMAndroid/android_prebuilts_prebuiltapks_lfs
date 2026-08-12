@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: 2024 The Calyx Institute
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+    name: "ESpeakNG",
+    apk: "espeak-release-unsigned.apk",
+    default_dev_cert: true,
+    product_specific: true,
+}
