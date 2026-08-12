@@ -1,4 +1,5 @@
 # Copyright (C) 2025 E FOUNDATION
+# Copyright (C) 2026 CharaROM Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,23 +16,22 @@
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/%
 
-# Android Auto Stubs specific for API level > 34
-ifeq ($(shell test $(PLATFORM_SDK_VERSION) -gt 34; echo $$?),0)
 PRODUCT_PACKAGES += \
-    AndroidAutoStub
-endif
-
-PRODUCT_PACKAGES += \
-    Ntfy \
     Talkback \
     Datura \
-    ESpeakNG \
     FakeSafetyCore \
-    FakeKeyVerifier \
+    FakeKeyVerifier 
 
 # Optional applications
 MINIMAL_APPS ?= false
 
 ifeq ($(MINIMAL_APPS),false)
-PRODUCT_PACKAGES += OpenKeychain
+PRODUCT_PACKAGES += \
+    OpenKeychain \
+    Ntfy 
+# Android Auto Stubs specific for API level > 34
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -gt 34; echo $$?),0)
+PRODUCT_PACKAGES += \
+    AndroidAutoStub
+endif
 endif
