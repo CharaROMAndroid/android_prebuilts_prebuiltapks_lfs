@@ -29,10 +29,5 @@ MINIMAL_APPS ?= false
 ifeq ($(MINIMAL_APPS),false)
 PRODUCT_PACKAGES += \
     OpenKeychain \
-    Ntfy 
-# Android Auto Stubs specific for API level > 34
-#ifeq ($(shell test $(PLATFORM_SDK_VERSION) -gt 34; echo $$?),0)
-#PRODUCT_PACKAGES += \
-#    AndroidAutoStub
-#endif
+    Ntfy
 endif

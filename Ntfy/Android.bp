@@ -9,13 +9,13 @@ android_app_import {
     ],
     
     required: ["app_whitelist_io.heckel.ntfy.xml"], 
-    system_ext_specific: true,
+    product_specific: true,
     apk: "app-fdroid-release-signed.apk",
 }
 
 prebuilt_etc {
     name: "app_whitelist_io.heckel.ntfy.xml",
-    system_ext_specific: true,
+    product_specific: true,
     src: "app_whitelist_io.heckel.ntfy.xml",
     relative_install_path: "permissions",
 }
